@@ -15,6 +15,6 @@
     </taskdef>
 	
     <target name="deploy">
-      <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" deployRoot="src" />
+      <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" testLevel="${testlevel}" deployRoot="src" />
     </target>
 </project>
