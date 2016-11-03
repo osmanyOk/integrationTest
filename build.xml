@@ -7,7 +7,7 @@
     -->
     <condition property="username" value=""> <not> <isset property="username"/> </not> </condition>
     <condition property="password" value=""> <not> <isset property="password"/> </not> </condition>
-	<condition property="testLevel" value=""> <not> <isset property="testLevel"/> </not> </condition>
+	<!--<condition property="testLevel" value=""> <not> <isset property="testLevel"/> </not> </condition> -->
 
     <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
         <classpath>
@@ -16,6 +16,6 @@
     </taskdef>
 	
     <target name="deploy">
-      <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" testLevel="${testlevel}" deployRoot="src" />
+      <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" deployRoot="src" />
     </target>
 </project>
