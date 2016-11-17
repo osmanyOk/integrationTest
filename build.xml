@@ -18,8 +18,10 @@
     <target name="deploy">
       <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" testLevel="${testLevel}" deployRoot="src" />
     </target>
-    
+   <!-- 
    <target name="runTest">
       <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" deployRoot="test" />
     </target>
+-->
+	
 </project>
