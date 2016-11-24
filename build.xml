@@ -18,12 +18,11 @@
     <target name="deploy">
       <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" testLevel="${testLevel}" deployRoot="src" />
     </target>
-    
+   <!-- 
    <target name="runTest">
       <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" deployRoot="test" />
     </target>
-    
-    <!--
+
     <target name="pmd">
         <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/>
         <pmd shortFilenames="true">
@@ -39,6 +38,5 @@
         </pmd>
     </target>    
     -->
-    
-    
+
 </project>
